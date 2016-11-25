@@ -1,0 +1,149 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import 'https://fonts.googleapis.com/css?family=Bree+Serif';
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+	-moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
+	-moz-transition-property: all;
+	-moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
+}
+
+.btn{
+	color: #f5f5f5;
+	background: #0F1012;
+	padding:10px 20px;
+	font-size:12px;
+	text-decoration:none;
+	letter-spacing:3px;
+	text-transform:uppercase;
+}
+
+.btn:hover{
+	border:none;
+	background:rgba(0, 0, 0, 0.4);
+	background:#f5f5f5;
+	padding:20px 20px; #000;
+	color:#1b1b1b;
+}
+
+header {
+	text-align: center;
+}
+
+h2.title-description{
+	font-family: 'Baloo Paaji', cursive;
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+p {
+	color: black;
+	margin: 15px auto;
+	max-width: 39rem;
+}
+
+.page-description {
+	margin-top: 1px;
+	text-align: justify;
+	padding: 1px;
+	font-family: 'Bree Serif', sans-serif;
+	font-weight: 300; 
+	font-size: 2.5ex;
+}
+
+body {
+	margin: 0;
+	font: 100%/1.5 'Open Sans', sans-serif;
+	font-weight: 400;
+	background: #f5f5f5;
+	color: #383838;
+}
+
+a {
+	color: #204156;
+	text-decoration: none;
+}
+
+.igor-column {
+	overflow: hidden;
+}
+
+.igor-column img {
+	transition: all ease 300ms;
+}
+
+.gallery {
+	margin-top: 40px;
+	justify-content: center;
+}
+
+.gallery-item {
+	margin: 20px;
+}
+
+.gallery-item .thumbnail {
+	border-radius: 5px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	width: 330px;
+	height: 222px;
+	transition: all ease 300ms;
+}
+
+.thumbnail:hover,
+.igor-column img:hover {
+	-webkit-filter: brightness(1.3);
+	box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav li {
+	display: inline;
+	margin: 0;
+	padding: 0 10px;
+}
+
+nav ul {
+	display: inline;
+}
+
+.contact-btn {
+	float: right;
+}
+
+.contact-btn a {
+	cursor: pointer;
+	margin-right: 30px;
+	padding: 8px 18px;
+	border: 1px solid #204156;
+	position: relative;
+}
+
+.contact-btn a:active {
+	top: 2px;
+}
+
+nav a {
+	height: 60px;
+	line-height: 60px;
+	color: #0F1012;
+	text-decoration: none;
+}
+
+
+.img-intro{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.img-intro img:hover{
+	-webkit-filter: grayscale(100%);
+}
