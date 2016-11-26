@@ -16,7 +16,7 @@
 		<div class="col-1-1 mobile-col-1-1">
 			<div class="content">
 				<div class="tabelaPreco">
-					<ul>
+					<ul class="master">
 						<li>
 						  <h1>Plano Bronze</h1>
 						  <p><span>R$</span><span>10</span><span>Mês</span></p>

@@ -100,11 +100,11 @@ nav a:active {
 .tabelaPreco {
   margin: 40px auto;
 }
-.tabelaPreco ul {
+.tabelaPreco ul.master {
   list-style: none;
   text-align: center;
 }
-.tabelaPreco ul li {
+.tabelaPreco ul.master > li {
   vertical-align: middle;
   width: 31%;
   background-color: #ffffff;
@@ -117,7 +117,7 @@ nav a:active {
   border-radius: 5px;
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li {
+  .tabelaPreco ul.master > li {
     display: block;
     width: 90%;
     margin: 0 auto;
@@ -128,51 +128,51 @@ nav a:active {
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li > * {
+  .tabelaPreco ul.master > li > * {
     display: inline-block;
     vertical-align: middle;
   }
 }
 @media screen and (max-width: 480px) {
-  .tabelaPreco ul li > * {
+  .tabelaPreco ul.master > li > * {
     display: block;
     float: none;
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li:after {
+  .tabelaPreco ul.master > li:after {
     display: table;
     content: '';
     clear: both;
   }
 }
-.tabelaPreco ul li:hover {
+.tabelaPreco ul.master > li:hover {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li:hover {
+  .tabelaPreco ul.master > li:hover {
     -webkit-transform: none;
             transform: none;
   }
 }
-.tabelaPreco ul li:not(:last-of-type) {
+.tabelaPreco ul.master > li:not(:last-of-type) {
   margin-right: 3.5%;
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li:not(:last-of-type) {
+  .tabelaPreco ul.master > li:not(:last-of-type) {
     margin-right: auto;
   }
 }
-.tabelaPreco ul li:nth-of-type(2) {
+.tabelaPreco ul.master > li:nth-of-type(2) {
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li:nth-of-type(2) h1 {
+  .tabelaPreco ul.master > li:nth-of-type(2) h1 {
     padding-top: 8%;
   }
 }
-.tabelaPreco ul .destaque:nth-of-type(2):before {
+.tabelaPreco ul.master .destaque:nth-of-type(2):before {
   content: 'Principal Escolha';
   position: absolute;
   color: white;
@@ -193,12 +193,12 @@ nav a:active {
   transition: all 0.5s ease;
 }
 @media screen and (max-width: 988px) {
-  .tabelaPreco ul .destaque:nth-of-type(2):before {
+  .tabelaPreco ul.master .destaque:nth-of-type(2):before {
     font-size: 0.6em;
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul .destaque:nth-of-type(2):before {
+  .tabelaPreco ul.master .destaque:nth-of-type(2):before {
     left: 10px;
     width: 45px;
     height: 45px;
@@ -207,27 +207,27 @@ nav a:active {
   }
 }
 @media screen and (max-width: 480px) {
-  .tabelaPreco ul .destaque:nth-of-type(2):before {
+  .tabelaPreco ul.master .destaque:nth-of-type(2):before {
     font-size: 0.8em;
   }
 }
-.tabelaPreco ul .destaque:nth-of-type(2):hover:before {
+.tabelaPreco ul.master .destaque:nth-of-type(2):hover:before {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
-.tabelaPreco ul li h1 {
+.tabelaPreco ul.master > li h1 {
   font-size: 1.6em;
   padding: 40px 0px;
   border-bottom: 2px solid #ebedec;
   letter-spacing: 0.03em;
 }
 @media screen and (max-width: 1068px) {
-  .tabelaPreco ul li h1 {
+  .tabelaPreco ul.master > li h1 {
     font-size: 1.45em;
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li h1 {
+  .tabelaPreco ul.master > li h1 {
     padding: 0px;
     border-bottom: none;
     float: left;
@@ -237,31 +237,32 @@ nav a:active {
   }
 }
 @media screen and (max-width: 610px) {
-  .tabelaPreco ul li h1 {
+  .tabelaPreco ul.master > li h1 {
     font-size: 1.3em;
   }
 }
 @media screen and (max-width: 480px) {
-  .tabelaPreco ul li h1 {
+  .tabelaPreco ul.master > li h1 {
     float: none;
     width: 100%;
     font-size: 1.8em;
     margin-bottom: 5px;
   }
 }
-.tabelaPreco ul li p {
+.tabelaPreco ul.master > li p {
   font-size: 3em;
-  padding: 30px 0px;
+  margin: 0;
+  padding: 0px 0px 20px 0px;
   border-bottom: 2px solid #ebedec;
   line-height: 0.7;
 }
 @media screen and (max-width: 1068px) {
-  .tabelaPreco ul li p {
+  .tabelaPreco ul.master > li p {
     font-size: 2.8em;
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li p {
+  .tabelaPreco ul.master > li p {
     border-bottom: none;
     padding: 0;
     float: left;
@@ -270,89 +271,89 @@ nav a:active {
   }
 }
 @media screen and (max-width: 610px) {
-  .tabelaPreco ul li p {
+  .tabelaPreco ul.master > li p {
     font-size: 2.4em;
   }
 }
 @media screen and (max-width: 480px) {
-  .tabelaPreco ul li p {
+  .tabelaPreco ul.master > li p {
     float: none;
     width: 100%;
     font-size: 3em;
     margin-bottom: 10px;
   }
 }
-.tabelaPreco ul li p span:first-of-type {
+.tabelaPreco ul.master > li p span:first-of-type {
   font-size: 0.35em;
   vertical-align: top;
   letter-spacing: 0.15em;
 }
 @media screen and (max-width: 1068px) {
-  .tabelaPreco ul li p span:first-of-type {
+  .tabelaPreco ul.master > li p span:first-of-type {
     font-size: 0.3em;
   }
 }
-.tabelaPreco ul li p span:last-of-type {
+.tabelaPreco ul.master > li p span:last-of-type {
   vertical-align: bottom;
   font-size: 0.30em;
   letter-spacing: 0.04em;
   padding-left: 0.2em;
 }
 @media screen and (max-width: 1068px) {
-  .tabelaPreco ul li p span:last-of-type {
+  .tabelaPreco ul.master > li p span:last-of-type {
     font-size: 0.25em;
   }
 }
-.tabelaPreco ul li ul {
+.tabelaPreco ul.master > li > ul {
   list-style: none;
   padding: 15px;
   font-size: 0.9em;
   border-bottom: 2px solid #ebedec;
 }
 @media screen and (max-width: 1068px) {
-  .tabelaPreco ul li ul {
+  .tabelaPreco ul.master > li > ul {
     font-size: 0.85em;
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li ul {
+  .tabelaPreco ul.master > li > ul {
     border-bottom: none;
     padding: 0;
     margin-right: 10%;
   }
 }
 @media screen and (max-width: 610px) {
-  .tabelaPreco ul li ul {
+  .tabelaPreco ul.master > li > ul {
     font-size: 0.7em;
     margin-right: 8%;
   }
 }
 @media screen and (max-width: 480px) {
-  .tabelaPreco ul li ul {
+  .tabelaPreco ul.master > li > ul {
     font-size: 1.3em;
     margin-right: none;
     margin-bottom: 10px;
   }
 }
-.tabelaPreco ul li ul > li {
+.tabelaPreco ul.master > li > ul > li {
   padding: 8px 0px;
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li ul > li {
+  .tabelaPreco ul.master > li > ul > li {
     text-align: left;
   }
 }
 @media screen and (max-width: 610px) {
-  .tabelaPreco ul li ul > li {
+  .tabelaPreco ul.master > li > ul > li {
     padding: 5px 0;
   }
 }
 @media screen and (max-width: 480px) {
-  .tabelaPreco ul li ul > li {
+  .tabelaPreco ul.master > li > ul > li {
     text-align: center;
   }
 }
-.tabelaPreco ul li ul > li:before {
+.tabelaPreco ul.master > li > ul > li:before {
   content: '✓';
   display: inline-block;
   margin-right: 15px;
@@ -366,19 +367,19 @@ nav a:active {
   text-align: center;
 }
 @media screen and (max-width: 1068px) {
-  .tabelaPreco ul li ul > li:before {
+  .tabelaPreco ul.master > li > ul > li:before {
     width: 14px;
     height: 14px;
     padding: 1.5px;
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li ul > li:before {
+  .tabelaPreco ul.master > li > ul > li:before {
     width: 12px;
     height: 12px;
   }
 }
-.tabelaPreco ul li div {
+.tabelaPreco ul.master > li div {
   color: white;
   background-color: #71ce73;
   margin-top: 30px;
@@ -391,47 +392,47 @@ nav a:active {
   transition: all 0.4s ease;
 }
 @media screen and (max-width: 1068px) {
-  .tabelaPreco ul li div {
+  .tabelaPreco ul.master > li div {
     font-size: 0.95em;
   }
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li div {
+  .tabelaPreco ul.master > li div {
     margin-top: 0;
   }
 }
 @media screen and (max-width: 610px) {
-  .tabelaPreco ul li div {
+  .tabelaPreco ul.master > li div {
     font-size: 0.9em;
     padding: 10px;
   }
 }
 @media screen and (max-width: 480px) {
-  .tabelaPreco ul li div {
+  .tabelaPreco ul.master > li div {
     font-size: 1em;
     width: 50%;
     margin: 10px auto;
   }
 }
-.tabelaPreco ul li div:hover {
+.tabelaPreco ul.master > li div:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   box-shadow: 0px 40px 29px -19px rgba(102, 172, 100, 0.9);
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li div:hover {
+  .tabelaPreco ul.master > li div:hover {
     -webkit-transform: none;
             transform: none;
     box-shadow: none;
   }
 }
-.tabelaPreco ul li div:active {
+.tabelaPreco ul.master > li div:active {
   box-shadow: inset 0 0 10px 1px #66a564, 0px 40px 29px -19px rgba(102, 172, 100, 0.95);
   -webkit-transform: scale(0.95) translateY(-9px);
           transform: scale(0.95) translateY(-9px);
 }
 @media screen and (max-width: 767px) {
-  .tabelaPreco ul li div:active {
+  .tabelaPreco ul.master > li div:active {
     -webkit-transform: scale(0.95) translateY(0);
             transform: scale(0.95) translateY(0);
     box-shadow: none;
