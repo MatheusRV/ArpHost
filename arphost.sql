@@ -79,39 +79,35 @@ CREATE TABLE `vendas` (
 --
 
 --
--- Indexes for table `produtos`
+-- Indexes para tabela `produtos`
 --
 ALTER TABLE `produtos`
   ADD PRIMARY KEY (`produto_id`);
 
 --
--- Indexes for table `usuarios`
+-- Indexes para tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `vendas`
+-- Indexes para tabela `vendas`
 --
 ALTER TABLE `vendas`
   ADD PRIMARY KEY (`venda_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `produtos`
+-- AUTO_INCREMENT para tabela `produtos`
 --
 ALTER TABLE `produtos`
   MODIFY `produto_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `usuarios`
+-- AUTO_INCREMENT para tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `ID` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 --
--- AUTO_INCREMENT for table `vendas`
+-- AUTO_INCREMENT para tabela `vendas`
 --
 ALTER TABLE `vendas`
   MODIFY `venda_id` int(100) NOT NULL AUTO_INCREMENT;

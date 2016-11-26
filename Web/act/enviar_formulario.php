@@ -12,9 +12,6 @@ if (isset($enviar)) {
 	echo "<font color=green><b><br>
 	<br>Formulário enviado com Sucesso!!<br>Você será redirecionado em 5 segundos...
 </font></b>";
-header("Refresh: 5, Contato.php");
-
-
+header("Refresh: 5, ../talk-to-us.php");
 }
-
 ?>
